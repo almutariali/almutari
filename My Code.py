@@ -37,33 +37,15 @@ if menu == 1:
                                     
 #option 2
 elif menu == 2:
-    file = input("What is your file name that contains the ASCII art")
+    file = input("What is your file name that contains the ASCII art (without the .txt extension)")
     open_f = open(file + '.txt', 'r')
-    read_f = open_f.readlines()
+    read_f = open_f.read()
+    print("File =\n" + read_f)
     open_f.close()
+     # All Working, you did not print the file
     
 #option 3
 if menu == 3:
-     u_file = input("What is your file name that contains the ASCII art " )
+     u_file = input("What is your file name that contains the ASCII art (Without the .txt extension)" )
      open_f = open(u_file+'.txt', 'r')
      open_f.close()
-
-
-
-
-
-#option 4
-if menu == 4:
-    u_file = input("What is your file name that contains the ASCII art " )
-    open_f = open('u_file'+'.txt', 'r')
-
-
-
-
-else:
-        print("There isn't a an option as such")
-
-
-
-
-
